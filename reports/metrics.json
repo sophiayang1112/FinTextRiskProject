@@ -1,0 +1,284 @@
+{
+  "data_source": "synthetic multi-source financial text and structured records",
+  "seed": 19,
+  "rows": 1800,
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit_learn": "1.9.1"
+  },
+  "backend": "offline_text_retrieval_fusion",
+  "live_llm_executed": false,
+  "primary_variant": "fusion",
+  "partitions_after_label_maturity_purge": {
+    "train": 917,
+    "validation": 197,
+    "calibration": 197,
+    "test": 270
+  },
+  "periods": {
+    "train": {
+      "start": "2020-01-01T00:00:00+00:00",
+      "end": "2023-01-19T00:00:00+00:00"
+    },
+    "validation": {
+      "start": "2023-04-19T00:00:00+00:00",
+      "end": "2023-12-13T00:00:00+00:00"
+    },
+    "calibration": {
+      "start": "2024-03-13T00:00:00+00:00",
+      "end": "2024-11-06T00:00:00+00:00"
+    },
+    "test": {
+      "start": "2025-02-04T00:00:00+00:00",
+      "end": "2025-12-28T00:00:00+00:00"
+    }
+  },
+  "temperature_rows": 98,
+  "conformal_rows": 99,
+  "threshold_costs": {
+    "false_negative": 3,
+    "false_positive": 1
+  },
+  "model_settings": {
+    "structured_lr": {
+      "temperature": 0.745225198022428,
+      "threshold": 0.45
+    },
+    "text_tfidf_lr": {
+      "temperature": 0.7069593873781653,
+      "threshold": 0.37
+    },
+    "fusion": {
+      "temperature": 1.2017502261545443,
+      "threshold": 0.435
+    },
+    "no_retrieval": {
+      "temperature": 1.0400753332249906,
+      "threshold": 0.305
+    },
+    "no_events": {
+      "temperature": 1.1947898671695438,
+      "threshold": 0.455
+    },
+    "no_cost_weight": {
+      "temperature": 1.2973775155913614,
+      "threshold": 0.265
+    }
+  },
+  "holdout_metrics": {
+    "structured_lr": {
+      "f1": 0.32786885245901637,
+      "mcc": 0.14608241794446275,
+      "average_precision": 0.2512279747843652,
+      "roc_auc": 0.6142764798226983,
+      "brier": 0.191258634525118,
+      "ece_10_bins": 0.17937476176335143,
+      "confusion_matrix": [
+        [
+          168,
+          53
+        ],
+        [
+          29,
+          20
+        ]
+      ],
+      "model_scoring_ms_per_row": 0.006304074216772009
+    },
+    "text_tfidf_lr": {
+      "f1": 0.391304347826087,
+      "mcc": 0.22102106088450268,
+      "average_precision": 0.32048370284930083,
+      "roc_auc": 0.6976175085418784,
+      "brier": 0.18734665428906874,
+      "ece_10_bins": 0.20464895170926117,
+      "confusion_matrix": [
+        [
+          122,
+          99
+        ],
+        [
+          13,
+          36
+        ]
+      ],
+      "model_scoring_ms_per_row": 0.01258333386094482
+    },
+    "fusion": {
+      "f1": 0.4,
+      "mcc": 0.23176624638280974,
+      "average_precision": 0.36264296236752314,
+      "roc_auc": 0.6856588789361898,
+      "brier": 0.18740924948100812,
+      "ece_10_bins": 0.20848979398392214,
+      "confusion_matrix": [
+        [
+          150,
+          71
+        ],
+        [
+          19,
+          30
+        ]
+      ],
+      "model_scoring_ms_per_row": 0.019113333136947068
+    },
+    "no_retrieval": {
+      "f1": 0.3813953488372093,
+      "mcc": 0.21472922701083053,
+      "average_precision": 0.3857915354044427,
+      "roc_auc": 0.7020038784744667,
+      "brier": 0.18351642701648238,
+      "ece_10_bins": 0.20906989791263286,
+      "confusion_matrix": [
+        [
+          96,
+          125
+        ],
+        [
+          8,
+          41
+        ]
+      ],
+      "model_scoring_ms_per_row": 0.021128518575871433
+    },
+    "no_events": {
+      "f1": 0.4027777777777778,
+      "mcc": 0.23662941267223217,
+      "average_precision": 0.3616988486585282,
+      "roc_auc": 0.6869517037584264,
+      "brier": 0.1871070900625929,
+      "ece_10_bins": 0.20757382222689433,
+      "confusion_matrix": [
+        [
+          155,
+          66
+        ],
+        [
+          20,
+          29
+        ]
+      ],
+      "model_scoring_ms_per_row": 0.018474814930447826
+    },
+    "no_cost_weight": {
+      "f1": 0.4084507042253521,
+      "mcc": 0.24514538453289883,
+      "average_precision": 0.37528989760086984,
+      "roc_auc": 0.6922153476775326,
+      "brier": 0.14051045678287363,
+      "ece_10_bins": 0.07224039237018247,
+      "confusion_matrix": [
+        [
+          157,
+          64
+        ],
+        [
+          20,
+          29
+        ]
+      ],
+      "model_scoring_ms_per_row": 0.01714111098812686
+    },
+    "no_calibration": {
+      "f1": 0.3973509933774834,
+      "mcc": 0.22771565570808056,
+      "average_precision": 0.36264296236752314,
+      "roc_auc": 0.6856588789361898,
+      "brier": 0.1849254024482493,
+      "ece_10_bins": 0.1929180723756132,
+      "confusion_matrix": [
+        [
+          149,
+          72
+        ],
+        [
+          19,
+          30
+        ]
+      ]
+    }
+  },
+  "feature_extraction_ms_per_row": 2.3558712777836868,
+  "conformal": {
+    "nominal_coverage": 0.9,
+    "observed_coverage": 0.8888888888888888,
+    "score_cutoff": 0.6403974390167763,
+    "mean_set_size": 1.4222222222222223,
+    "abstention_rate": 0.4222222222222222,
+    "interpretation": "empirical label-set coverage; temporal exchangeability not assumed"
+  },
+  "error_buckets": {
+    "short_text": {
+      "samples": 270,
+      "false_positive": 71,
+      "false_negative": 19
+    },
+    "high_dti": {
+      "samples": 148,
+      "false_positive": 48,
+      "false_negative": 10
+    },
+    "old_evidence": {
+      "samples": 270,
+      "false_positive": 71,
+      "false_negative": 19
+    },
+    "all_samples": {
+      "samples": 270,
+      "false_positive": 71,
+      "false_negative": 19
+    }
+  },
+  "stress_test": {
+    "scenario": "DTI increased by 0.10 on holdout inputs",
+    "mean_probability_change": 0.04798122300588224,
+    "shifted_metrics": {
+      "f1": 0.38461538461538464,
+      "mcc": 0.20880061911629832,
+      "average_precision": 0.36276741262778256,
+      "roc_auc": 0.6855665343060301,
+      "brier": 0.21025225562649355,
+      "ece_10_bins": 0.25714776262852973,
+      "confusion_matrix": [
+        [
+          123,
+          98
+        ],
+        [
+          14,
+          35
+        ]
+      ]
+    },
+    "dti_psi": 0.8360306246597379
+  },
+  "income_q1_slice": {
+    "rows": 64,
+    "metrics": {
+      "f1": 0.3888888888888889,
+      "mcc": 0.229461336019767,
+      "average_precision": 0.4575481703047685,
+      "roc_auc": 0.7272727272727273,
+      "brier": 0.17916042840126345,
+      "ece_10_bins": 0.22681885129801574,
+      "confusion_matrix": [
+        [
+          35,
+          18
+        ],
+        [
+          4,
+          7
+        ]
+      ]
+    }
+  },
+  "scope_notes": [
+    "Synthetic results are separate from paper tables.",
+    "No FinBERT/CRF/fine-tuning run is represented by the offline baseline.",
+    "LLM model pretraining chronology requires separate assessment."
+  ]
+}

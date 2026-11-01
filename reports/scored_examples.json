@@ -1,0 +1,128 @@
+[
+  {
+    "sample_id": "S01530",
+    "default_probability": 0.34441849579479383,
+    "review_flag": false,
+    "prediction_set": [
+      0
+    ],
+    "abstain": false,
+    "evidence_ids": [
+      "D01530_0",
+      "D01530_2",
+      "D01530_1"
+    ],
+    "backend": "offline_text_retrieval_fusion"
+  },
+  {
+    "sample_id": "S01531",
+    "default_probability": 0.4791740715465702,
+    "review_flag": true,
+    "prediction_set": [
+      0,
+      1
+    ],
+    "abstain": true,
+    "evidence_ids": [
+      "D01531_2",
+      "D01531_1",
+      "D01531_0"
+    ],
+    "backend": "offline_text_retrieval_fusion"
+  },
+  {
+    "sample_id": "S01532",
+    "default_probability": 0.5194879680106037,
+    "review_flag": true,
+    "prediction_set": [
+      0,
+      1
+    ],
+    "abstain": true,
+    "evidence_ids": [
+      "D01532_2",
+      "D01532_1",
+      "D01532_0"
+    ],
+    "backend": "offline_text_retrieval_fusion"
+  },
+  {
+    "sample_id": "S01533",
+    "default_probability": 0.4962422805599214,
+    "review_flag": true,
+    "prediction_set": [
+      0,
+      1
+    ],
+    "abstain": true,
+    "evidence_ids": [
+      "D01533_1",
+      "D01533_2",
+      "D01533_0"
+    ],
+    "backend": "offline_text_retrieval_fusion"
+  },
+  {
+    "sample_id": "S01534",
+    "default_probability": 0.514064749550569,
+    "review_flag": true,
+    "prediction_set": [
+      0,
+      1
+    ],
+    "abstain": true,
+    "evidence_ids": [
+      "D01534_2",
+      "D01534_1",
+      "D01534_0"
+    ],
+    "backend": "offline_text_retrieval_fusion"
+  },
+  {
+    "sample_id": "S01535",
+    "default_probability": 0.4813020874824058,
+    "review_flag": true,
+    "prediction_set": [
+      0,
+      1
+    ],
+    "abstain": true,
+    "evidence_ids": [
+      "D01535_1",
+      "D01535_2",
+      "D01535_0"
+    ],
+    "backend": "offline_text_retrieval_fusion"
+  },
+  {
+    "sample_id": "S01536",
+    "default_probability": 0.5039600257776915,
+    "review_flag": true,
+    "prediction_set": [
+      0,
+      1
+    ],
+    "abstain": true,
+    "evidence_ids": [
+      "D01536_0",
+      "D01536_2",
+      "D01536_1"
+    ],
+    "backend": "offline_text_retrieval_fusion"
+  },
+  {
+    "sample_id": "S01537",
+    "default_probability": 0.7673311579956267,
+    "review_flag": true,
+    "prediction_set": [
+      1
+    ],
+    "abstain": false,
+    "evidence_ids": [
+      "D01537_0",
+      "D01537_2",
+      "D01537_1"
+    ],
+    "backend": "offline_text_retrieval_fusion"
+  }
+]

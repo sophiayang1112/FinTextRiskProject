@@ -1,0 +1,714 @@
+[
+  {
+    "sample_id": "S01530",
+    "assessed_at": "2025-02-04T00:00:00+00:00",
+    "backend": "tfidf_event_retrieval_fusion",
+    "default_probability": 0.34441849579479383,
+    "prediction_set": [
+      0
+    ],
+    "abstain": false,
+    "evidence": [
+      {
+        "doc_id": "D01530_0",
+        "entity_id": "ENTITY01530",
+        "text": "Issuer financial update: liquidity shortfall; potential cash pressure.",
+        "published_at": "2024-05-30T00:00:00+00:00",
+        "available_at": "2024-06-01T00:00:00+00:00",
+        "age_days": 250.0,
+        "quality": 0.7986355681976166,
+        "weight": 0.22881292123178062,
+        "similarity": 0.425563835633044,
+        "content_hash": "1b35e748b5cec356a2bc4a7bf28b324a36292899295952626fe0471a8a0a9f8f",
+        "events": [
+          "liquidity"
+        ]
+      },
+      {
+        "doc_id": "D01530_2",
+        "entity_id": "ENTITY01530",
+        "text": "Issuer financial update: cash reserve; operations continue.",
+        "published_at": "2025-01-23T00:00:00+00:00",
+        "available_at": "2025-01-25T00:00:00+00:00",
+        "age_days": 12.0,
+        "quality": 0.627899733625045,
+        "weight": 0.5913336997750646,
+        "similarity": 0.009992304468646688,
+        "content_hash": "c23f56c38cbdab16876bc8a2be0c4c8571d66962468f2412a35752e3f4616dd9",
+        "events": []
+      },
+      {
+        "doc_id": "D01530_1",
+        "entity_id": "ENTITY01530",
+        "text": "Issuer financial update: debt repaid; operations continue.",
+        "published_at": "2024-11-26T00:00:00+00:00",
+        "available_at": "2024-11-28T00:00:00+00:00",
+        "age_days": 70.0,
+        "quality": 0.7376357954807947,
+        "weight": 0.5198031596255048,
+        "similarity": 0.009626399545230879,
+        "content_hash": "2c3babc7030a155fb593b271d3f4ff05ede358d420aed1f183b04942136fe1c9",
+        "events": []
+      }
+    ],
+    "attribution_target": "uncalibrated fusion probability",
+    "integrated_gradients": [
+      {
+        "feature": "numeric__event_score",
+        "attribution": 0.15455299419171417
+      },
+      {
+        "feature": "numeric__delinquencies",
+        "attribution": -0.06438059108453786
+      },
+      {
+        "feature": "numeric__rate",
+        "attribution": -0.04636483468741335
+      },
+      {
+        "feature": "numeric__debt_to_income",
+        "attribution": -0.04558342566353805
+      },
+      {
+        "feature": "text__payment revenue",
+        "attribution": -0.03712773383950661
+      },
+      {
+        "feature": "numeric__uncertainty",
+        "attribution": -0.023028607887978517
+      },
+      {
+        "feature": "numeric__source_strength",
+        "attribution": -0.02301921187862425
+      },
+      {
+        "feature": "text__layoff",
+        "attribution": -0.022542435209609555
+      }
+    ]
+  },
+  {
+    "sample_id": "S01531",
+    "assessed_at": "2025-02-05T00:00:00+00:00",
+    "backend": "tfidf_event_retrieval_fusion",
+    "default_probability": 0.4791740715465702,
+    "prediction_set": [
+      0,
+      1
+    ],
+    "abstain": true,
+    "evidence": [
+      {
+        "doc_id": "D01531_2",
+        "entity_id": "ENTITY01531",
+        "text": "Issuer financial update: stable revenue; operations continue.",
+        "published_at": "2025-01-24T00:00:00+00:00",
+        "available_at": "2025-01-26T00:00:00+00:00",
+        "age_days": 12.0,
+        "quality": 0.9110328212782833,
+        "weight": 0.8579784000110847,
+        "similarity": 0.01770878936010819,
+        "content_hash": "0fe69247c16c68e4940e66a48f126c82828dd388a49d2004488d44feae1ee1f4",
+        "events": []
+      },
+      {
+        "doc_id": "D01531_1",
+        "entity_id": "ENTITY01531",
+        "text": "Issuer financial update: cash reserve; operations continue.",
+        "published_at": "2024-11-27T00:00:00+00:00",
+        "available_at": "2024-11-29T00:00:00+00:00",
+        "age_days": 70.0,
+        "quality": 0.940644902315644,
+        "weight": 0.662861259316457,
+        "similarity": 0.01823526298076491,
+        "content_hash": "c23f56c38cbdab16876bc8a2be0c4c8571d66962468f2412a35752e3f4616dd9",
+        "events": []
+      },
+      {
+        "doc_id": "D01531_0",
+        "entity_id": "ENTITY01531",
+        "text": "Issuer financial update: late payment; potential cash pressure.",
+        "published_at": "2024-05-31T00:00:00+00:00",
+        "available_at": "2024-06-02T00:00:00+00:00",
+        "age_days": 250.0,
+        "quality": 0.7322347120489385,
+        "weight": 0.2097887574295609,
+        "similarity": 0.01211837502892257,
+        "content_hash": "6a9ea1d14147a74c06061edba20d9cfe302be4f28317f6613a4d7e95881d3578",
+        "events": [
+          "payment_delay"
+        ]
+      }
+    ],
+    "attribution_target": "uncalibrated fusion probability",
+    "integrated_gradients": [
+      {
+        "feature": "numeric__debt_to_income",
+        "attribution": 0.14979207285453472
+      },
+      {
+        "feature": "numeric__delinquencies",
+        "attribution": -0.06993697240627782
+      },
+      {
+        "feature": "numeric__uncertainty",
+        "attribution": 0.05491338375838374
+      },
+      {
+        "feature": "numeric__rate",
+        "attribution": -0.033400031936853966
+      },
+      {
+        "feature": "numeric__event_score",
+        "attribution": -0.031574438736977045
+      },
+      {
+        "feature": "text__update covenant",
+        "attribution": 0.027260587618756275
+      },
+      {
+        "feature": "text__breach outlook",
+        "attribution": 0.02608612992266551
+      },
+      {
+        "feature": "numeric__source_strength",
+        "attribution": 0.02236430514186334
+      }
+    ]
+  },
+  {
+    "sample_id": "S01532",
+    "assessed_at": "2025-02-06T00:00:00+00:00",
+    "backend": "tfidf_event_retrieval_fusion",
+    "default_probability": 0.5194879680106037,
+    "prediction_set": [
+      0,
+      1
+    ],
+    "abstain": true,
+    "evidence": [
+      {
+        "doc_id": "D01532_2",
+        "entity_id": "ENTITY01532",
+        "text": "Issuer financial update: debt repaid; operations continue.",
+        "published_at": "2025-01-25T00:00:00+00:00",
+        "available_at": "2025-01-27T00:00:00+00:00",
+        "age_days": 12.0,
+        "quality": 0.95128230063591,
+        "weight": 0.8958839321653289,
+        "similarity": 0.017347332500014728,
+        "content_hash": "2c3babc7030a155fb593b271d3f4ff05ede358d420aed1f183b04942136fe1c9",
+        "events": []
+      },
+      {
+        "doc_id": "D01532_1",
+        "entity_id": "ENTITY01532",
+        "text": "Issuer financial update: covenant breach; potential cash pressure.",
+        "published_at": "2024-11-28T00:00:00+00:00",
+        "available_at": "2024-11-30T00:00:00+00:00",
+        "age_days": 70.0,
+        "quality": 0.8733339309333374,
+        "weight": 0.6154280194759484,
+        "similarity": 0.011956685560008487,
+        "content_hash": "9c33ec8c6d0f26e0207f3955cf83791cba9aceb7db614005d71e07ac928e69c1",
+        "events": [
+          "covenant"
+        ]
+      },
+      {
+        "doc_id": "D01532_0",
+        "entity_id": "ENTITY01532",
+        "text": "Issuer financial update: revenue decline; potential cash pressure.",
+        "published_at": "2024-06-01T00:00:00+00:00",
+        "available_at": "2024-06-03T00:00:00+00:00",
+        "age_days": 250.0,
+        "quality": 0.6899981555275585,
+        "weight": 0.197687781383329,
+        "similarity": 0.012630819342819073,
+        "content_hash": "91a719c7b0552c8db35329761fec432095b521797bd47514a58aa83c5b3b3b1b",
+        "events": [
+          "revenue"
+        ]
+      }
+    ],
+    "attribution_target": "uncalibrated fusion probability",
+    "integrated_gradients": [
+      {
+        "feature": "numeric__debt_to_income",
+        "attribution": 0.146015788856502
+      },
+      {
+        "feature": "numeric__delinquencies",
+        "attribution": -0.07065963893439557
+      },
+      {
+        "feature": "numeric__retrieved_sentiment",
+        "attribution": 0.04975983846170513
+      },
+      {
+        "feature": "numeric__retrieved_event",
+        "attribution": 0.049759838461705105
+      },
+      {
+        "feature": "numeric__rate",
+        "attribution": 0.03469337616843709
+      },
+      {
+        "feature": "numeric__event_score",
+        "attribution": -0.0319007009304098
+      },
+      {
+        "feature": "numeric__uncertainty",
+        "attribution": -0.025274591163502613
+      },
+      {
+        "feature": "numeric__principal",
+        "attribution": 0.020982444647630997
+      }
+    ]
+  },
+  {
+    "sample_id": "S01533",
+    "assessed_at": "2025-02-08T00:00:00+00:00",
+    "backend": "tfidf_event_retrieval_fusion",
+    "default_probability": 0.4962422805599214,
+    "prediction_set": [
+      0,
+      1
+    ],
+    "abstain": true,
+    "evidence": [
+      {
+        "doc_id": "D01533_1",
+        "entity_id": "ENTITY01533",
+        "text": "Issuer financial update: layoff; potential cash pressure.",
+        "published_at": "2024-11-30T00:00:00+00:00",
+        "available_at": "2024-12-02T00:00:00+00:00",
+        "age_days": 70.0,
+        "quality": 0.7801283505188903,
+        "weight": 0.5497471570625677,
+        "similarity": 0.17934760621894608,
+        "content_hash": "0afa5006ec824c0a6f9ed7ee5924c72eb7bc3b5da442e9ca986252146ccff9ef",
+        "events": [
+          "employment"
+        ]
+      },
+      {
+        "doc_id": "D01533_2",
+        "entity_id": "ENTITY01533",
+        "text": "Issuer financial update: liquidity shortfall; potential cash pressure.",
+        "published_at": "2025-01-27T00:00:00+00:00",
+        "available_at": "2025-01-29T00:00:00+00:00",
+        "age_days": 12.0,
+        "quality": 0.740903786543263,
+        "weight": 0.6977569089647199,
+        "similarity": 0.00887326653682897,
+        "content_hash": "1b35e748b5cec356a2bc4a7bf28b324a36292899295952626fe0471a8a0a9f8f",
+        "events": [
+          "liquidity"
+        ]
+      },
+      {
+        "doc_id": "D01533_0",
+        "entity_id": "ENTITY01533",
+        "text": "Issuer financial update: covenant breach; potential cash pressure.",
+        "published_at": "2024-06-03T00:00:00+00:00",
+        "available_at": "2024-06-05T00:00:00+00:00",
+        "age_days": 250.0,
+        "quality": 0.9164820134449161,
+        "weight": 0.2625764930880537,
+        "similarity": 0.00895564471355669,
+        "content_hash": "9c33ec8c6d0f26e0207f3955cf83791cba9aceb7db614005d71e07ac928e69c1",
+        "events": [
+          "covenant"
+        ]
+      }
+    ],
+    "attribution_target": "uncalibrated fusion probability",
+    "integrated_gradients": [
+      {
+        "feature": "numeric__retrieved_sentiment",
+        "attribution": 0.15278971921735598
+      },
+      {
+        "feature": "numeric__retrieved_event",
+        "attribution": 0.15278971921735593
+      },
+      {
+        "feature": "numeric__debt_to_income",
+        "attribution": -0.1326748452389928
+      },
+      {
+        "feature": "text__layoff outlook",
+        "attribution": -0.08655811297904527
+      },
+      {
+        "feature": "numeric__event_score",
+        "attribution": 0.0726857426430226
+      },
+      {
+        "feature": "numeric__delinquencies",
+        "attribution": -0.07029631259760309
+      },
+      {
+        "feature": "numeric__uncertainty",
+        "attribution": 0.055195531886149764
+      },
+      {
+        "feature": "numeric__rate",
+        "attribution": 0.041327622830613434
+      }
+    ]
+  },
+  {
+    "sample_id": "S01534",
+    "assessed_at": "2025-02-09T00:00:00+00:00",
+    "backend": "tfidf_event_retrieval_fusion",
+    "default_probability": 0.514064749550569,
+    "prediction_set": [
+      0,
+      1
+    ],
+    "abstain": true,
+    "evidence": [
+      {
+        "doc_id": "D01534_2",
+        "entity_id": "ENTITY01534",
+        "text": "Issuer financial update: stable revenue; operations continue.",
+        "published_at": "2025-01-28T00:00:00+00:00",
+        "available_at": "2025-01-30T00:00:00+00:00",
+        "age_days": 12.0,
+        "quality": 0.7423442792975216,
+        "weight": 0.6991135139515656,
+        "similarity": 0.010669199659165374,
+        "content_hash": "0fe69247c16c68e4940e66a48f126c82828dd388a49d2004488d44feae1ee1f4",
+        "events": []
+      },
+      {
+        "doc_id": "D01534_1",
+        "entity_id": "ENTITY01534",
+        "text": "Issuer financial update: cash reserve; operations continue.",
+        "published_at": "2024-12-01T00:00:00+00:00",
+        "available_at": "2024-12-03T00:00:00+00:00",
+        "age_days": 70.0,
+        "quality": 0.9495626939619614,
+        "weight": 0.6691455208762098,
+        "similarity": 0.010986389731272929,
+        "content_hash": "c23f56c38cbdab16876bc8a2be0c4c8571d66962468f2412a35752e3f4616dd9",
+        "events": []
+      },
+      {
+        "doc_id": "D01534_0",
+        "entity_id": "ENTITY01534",
+        "text": "Issuer financial update: debt repaid; operations continue.",
+        "published_at": "2024-06-04T00:00:00+00:00",
+        "available_at": "2024-06-06T00:00:00+00:00",
+        "age_days": 250.0,
+        "quality": 0.8584885671943665,
+        "weight": 0.24596109255081763,
+        "similarity": 0.010584082725331376,
+        "content_hash": "2c3babc7030a155fb593b271d3f4ff05ede358d420aed1f183b04942136fe1c9",
+        "events": []
+      }
+    ],
+    "attribution_target": "uncalibrated fusion probability",
+    "integrated_gradients": [
+      {
+        "feature": "numeric__debt_to_income",
+        "attribution": 0.16816065554517276
+      },
+      {
+        "feature": "numeric__event_score",
+        "attribution": 0.1254150854036779
+      },
+      {
+        "feature": "numeric__delinquencies",
+        "attribution": -0.07058793765845262
+      },
+      {
+        "feature": "numeric__retrieved_sentiment",
+        "attribution": -0.044423021079239275
+      },
+      {
+        "feature": "numeric__retrieved_event",
+        "attribution": -0.04442302107923924
+      },
+      {
+        "feature": "text__layoff",
+        "attribution": -0.027206668691291565
+      },
+      {
+        "feature": "numeric__rate",
+        "attribution": -0.0252786627196067
+      },
+      {
+        "feature": "numeric__uncertainty",
+        "attribution": -0.025248943984112943
+      }
+    ]
+  },
+  {
+    "sample_id": "S01535",
+    "assessed_at": "2025-02-10T00:00:00+00:00",
+    "backend": "tfidf_event_retrieval_fusion",
+    "default_probability": 0.4813020874824058,
+    "prediction_set": [
+      0,
+      1
+    ],
+    "abstain": true,
+    "evidence": [
+      {
+        "doc_id": "D01535_1",
+        "entity_id": "ENTITY01535",
+        "text": "Issuer financial update: stable revenue; operations continue.",
+        "published_at": "2024-12-02T00:00:00+00:00",
+        "available_at": "2024-12-04T00:00:00+00:00",
+        "age_days": 70.0,
+        "quality": 0.8780771780741311,
+        "weight": 0.618770529242658,
+        "similarity": 0.08356676552915793,
+        "content_hash": "0fe69247c16c68e4940e66a48f126c82828dd388a49d2004488d44feae1ee1f4",
+        "events": []
+      },
+      {
+        "doc_id": "D01535_2",
+        "entity_id": "ENTITY01535",
+        "text": "Issuer financial update: debt repaid; operations continue.",
+        "published_at": "2025-01-29T00:00:00+00:00",
+        "available_at": "2025-01-31T00:00:00+00:00",
+        "age_days": 12.0,
+        "quality": 0.6669586836091593,
+        "weight": 0.6281180335891444,
+        "similarity": 0.01148649020666888,
+        "content_hash": "2c3babc7030a155fb593b271d3f4ff05ede358d420aed1f183b04942136fe1c9",
+        "events": []
+      },
+      {
+        "doc_id": "D01535_0",
+        "entity_id": "ENTITY01535",
+        "text": "Issuer financial update: cash reserve; operations continue.",
+        "published_at": "2024-06-05T00:00:00+00:00",
+        "available_at": "2024-06-07T00:00:00+00:00",
+        "age_days": 250.0,
+        "quality": 0.6212700563198427,
+        "weight": 0.17799685128123538,
+        "similarity": 0.011923098234378454,
+        "content_hash": "c23f56c38cbdab16876bc8a2be0c4c8571d66962468f2412a35752e3f4616dd9",
+        "events": []
+      }
+    ],
+    "attribution_target": "uncalibrated fusion probability",
+    "integrated_gradients": [
+      {
+        "feature": "numeric__event_score",
+        "attribution": 0.07236491463296084
+      },
+      {
+        "feature": "numeric__delinquencies",
+        "attribution": -0.06998603130631695
+      },
+      {
+        "feature": "text__shortfall revenue",
+        "attribution": 0.06358597585708417
+      },
+      {
+        "feature": "numeric__uncertainty",
+        "attribution": 0.05495190401615187
+      },
+      {
+        "feature": "numeric__rate",
+        "attribution": 0.04811316625318465
+      },
+      {
+        "feature": "numeric__retrieved_sentiment",
+        "attribution": -0.04404422408565054
+      },
+      {
+        "feature": "numeric__retrieved_event",
+        "attribution": -0.04404422408565051
+      },
+      {
+        "feature": "text__breach outlook",
+        "attribution": 0.02142936492337139
+      }
+    ]
+  },
+  {
+    "sample_id": "S01536",
+    "assessed_at": "2025-02-11T00:00:00+00:00",
+    "backend": "tfidf_event_retrieval_fusion",
+    "default_probability": 0.5039600257776915,
+    "prediction_set": [
+      0,
+      1
+    ],
+    "abstain": true,
+    "evidence": [
+      {
+        "doc_id": "D01536_0",
+        "entity_id": "ENTITY01536",
+        "text": "Issuer financial update: stable revenue; operations continue.",
+        "published_at": "2024-06-06T00:00:00+00:00",
+        "available_at": "2024-06-08T00:00:00+00:00",
+        "age_days": 250.0,
+        "quality": 0.6793014066478367,
+        "weight": 0.19462311151847983,
+        "similarity": 0.14031027479391728,
+        "content_hash": "0fe69247c16c68e4940e66a48f126c82828dd388a49d2004488d44feae1ee1f4",
+        "events": []
+      },
+      {
+        "doc_id": "D01536_2",
+        "entity_id": "ENTITY01536",
+        "text": "Issuer financial update: cash reserve; operations continue.",
+        "published_at": "2025-01-30T00:00:00+00:00",
+        "available_at": "2025-02-01T00:00:00+00:00",
+        "age_days": 12.0,
+        "quality": 0.8112997247632129,
+        "weight": 0.7640533068886566,
+        "similarity": 0.020019120987479107,
+        "content_hash": "c23f56c38cbdab16876bc8a2be0c4c8571d66962468f2412a35752e3f4616dd9",
+        "events": []
+      },
+      {
+        "doc_id": "D01536_1",
+        "entity_id": "ENTITY01536",
+        "text": "Issuer financial update: debt repaid; operations continue.",
+        "published_at": "2024-12-03T00:00:00+00:00",
+        "available_at": "2024-12-05T00:00:00+00:00",
+        "age_days": 70.0,
+        "quality": 0.6735853664754805,
+        "weight": 0.47466758516408586,
+        "similarity": 0.019286047355189417,
+        "content_hash": "2c3babc7030a155fb593b271d3f4ff05ede358d420aed1f183b04942136fe1c9",
+        "events": []
+      }
+    ],
+    "attribution_target": "uncalibrated fusion probability",
+    "integrated_gradients": [
+      {
+        "feature": "numeric__delinquencies",
+        "attribution": 0.1553961338675041
+      },
+      {
+        "feature": "numeric__debt_to_income",
+        "attribution": 0.12585765270651486
+      },
+      {
+        "feature": "numeric__uncertainty",
+        "attribution": 0.055302945336667485
+      },
+      {
+        "feature": "numeric__retrieved_sentiment",
+        "attribution": -0.04432558544811704
+      },
+      {
+        "feature": "numeric__retrieved_event",
+        "attribution": -0.044325585448117
+      },
+      {
+        "feature": "numeric__event_score",
+        "attribution": -0.031798431274787514
+      },
+      {
+        "feature": "numeric__rate",
+        "attribution": -0.024426000497997202
+      },
+      {
+        "feature": "numeric__source_strength",
+        "attribution": -0.01377880220207807
+      }
+    ]
+  },
+  {
+    "sample_id": "S01537",
+    "assessed_at": "2025-02-13T00:00:00+00:00",
+    "backend": "tfidf_event_retrieval_fusion",
+    "default_probability": 0.7673311579956267,
+    "prediction_set": [
+      1
+    ],
+    "abstain": false,
+    "evidence": [
+      {
+        "doc_id": "D01537_0",
+        "entity_id": "ENTITY01537",
+        "text": "Issuer financial update: revenue decline; potential cash pressure.",
+        "published_at": "2024-06-08T00:00:00+00:00",
+        "available_at": "2024-06-10T00:00:00+00:00",
+        "age_days": 250.0,
+        "quality": 0.980525103209708,
+        "weight": 0.2809251455114143,
+        "similarity": 0.3806110679069385,
+        "content_hash": "91a719c7b0552c8db35329761fec432095b521797bd47514a58aa83c5b3b3b1b",
+        "events": [
+          "revenue"
+        ]
+      },
+      {
+        "doc_id": "D01537_2",
+        "entity_id": "ENTITY01537",
+        "text": "Issuer financial update: stable revenue; operations continue.",
+        "published_at": "2025-02-01T00:00:00+00:00",
+        "available_at": "2025-02-03T00:00:00+00:00",
+        "age_days": 12.0,
+        "quality": 0.7257601030338007,
+        "weight": 0.6834951249276836,
+        "similarity": 0.10189850168614079,
+        "content_hash": "0fe69247c16c68e4940e66a48f126c82828dd388a49d2004488d44feae1ee1f4",
+        "events": []
+      },
+      {
+        "doc_id": "D01537_1",
+        "entity_id": "ENTITY01537",
+        "text": "Issuer financial update: covenant breach; potential cash pressure.",
+        "published_at": "2024-12-05T00:00:00+00:00",
+        "available_at": "2024-12-07T00:00:00+00:00",
+        "age_days": 70.0,
+        "quality": 0.741091044041501,
+        "weight": 0.5222380321332523,
+        "similarity": 0.009653830231920686,
+        "content_hash": "9c33ec8c6d0f26e0207f3955cf83791cba9aceb7db614005d71e07ac928e69c1",
+        "events": [
+          "covenant"
+        ]
+      }
+    ],
+    "attribution_target": "uncalibrated fusion probability",
+    "integrated_gradients": [
+      {
+        "feature": "numeric__debt_to_income",
+        "attribution": 0.15386455234184027
+      },
+      {
+        "feature": "numeric__delinquencies",
+        "attribution": 0.14301056617379526
+      },
+      {
+        "feature": "numeric__retrieved_sentiment",
+        "attribution": 0.05735848056438745
+      },
+      {
+        "feature": "numeric__retrieved_event",
+        "attribution": 0.0573584805643874
+      },
+      {
+        "feature": "numeric__uncertainty",
+        "attribution": 0.05089512413750694
+      },
+      {
+        "feature": "text__payment revenue",
+        "attribution": -0.03876213212221421
+      },
+      {
+        "feature": "numeric__principal",
+        "attribution": -0.021423299493307305
+      },
+      {
+        "feature": "numeric__event_score",
+        "attribution": 0.018879319241782308
+      }
+    ]
+  }
+]

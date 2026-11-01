@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "FinTextRiskProject"
+version = "0.1.0"
+description = "Evidence-grounded financial risk assessment with text mining, retrieval, feature fusion and model governance"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<4", "scikit-learn>=1.5,<2", "matplotlib>=3.9,<4", "scipy>=1.11,<2", "joblib>=1.4,<2"]
+
+[project.scripts]
+fintext-risk = "fintext_risk.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fintext_risk*"]

@@ -1,0 +1,367 @@
+{
+  "nodes": [
+    {
+      "id": "event:liquidity",
+      "type": "risk_event"
+    },
+    {
+      "id": "event:payment_delay",
+      "type": "risk_event"
+    },
+    {
+      "id": "event:covenant",
+      "type": "risk_event"
+    },
+    {
+      "id": "event:employment",
+      "type": "risk_event"
+    },
+    {
+      "id": "event:revenue",
+      "type": "risk_event"
+    },
+    {
+      "id": "entity:ENTITY01530",
+      "type": "entity"
+    },
+    {
+      "id": "document:D01530_0",
+      "type": "document",
+      "published_at": "2024-05-30T00:00:00+00:00",
+      "available_at": "2024-06-01T00:00:00+00:00"
+    },
+    {
+      "id": "entity:ENTITY01531",
+      "type": "entity"
+    },
+    {
+      "id": "document:D01531_0",
+      "type": "document",
+      "published_at": "2024-05-31T00:00:00+00:00",
+      "available_at": "2024-06-02T00:00:00+00:00"
+    },
+    {
+      "id": "entity:ENTITY01532",
+      "type": "entity"
+    },
+    {
+      "id": "document:D01532_0",
+      "type": "document",
+      "published_at": "2024-06-01T00:00:00+00:00",
+      "available_at": "2024-06-03T00:00:00+00:00"
+    },
+    {
+      "id": "entity:ENTITY01533",
+      "type": "entity"
+    },
+    {
+      "id": "document:D01533_0",
+      "type": "document",
+      "published_at": "2024-06-03T00:00:00+00:00",
+      "available_at": "2024-06-05T00:00:00+00:00"
+    },
+    {
+      "id": "entity:ENTITY01534",
+      "type": "entity"
+    },
+    {
+      "id": "document:D01534_0",
+      "type": "document",
+      "published_at": "2024-06-04T00:00:00+00:00",
+      "available_at": "2024-06-06T00:00:00+00:00"
+    },
+    {
+      "id": "entity:ENTITY01535",
+      "type": "entity"
+    },
+    {
+      "id": "document:D01535_0",
+      "type": "document",
+      "published_at": "2024-06-05T00:00:00+00:00",
+      "available_at": "2024-06-07T00:00:00+00:00"
+    },
+    {
+      "id": "entity:ENTITY01536",
+      "type": "entity"
+    },
+    {
+      "id": "document:D01536_0",
+      "type": "document",
+      "published_at": "2024-06-06T00:00:00+00:00",
+      "available_at": "2024-06-08T00:00:00+00:00"
+    },
+    {
+      "id": "entity:ENTITY01537",
+      "type": "entity"
+    },
+    {
+      "id": "document:D01537_0",
+      "type": "document",
+      "published_at": "2024-06-08T00:00:00+00:00",
+      "available_at": "2024-06-10T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01530_1",
+      "type": "document",
+      "published_at": "2024-11-26T00:00:00+00:00",
+      "available_at": "2024-11-28T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01531_1",
+      "type": "document",
+      "published_at": "2024-11-27T00:00:00+00:00",
+      "available_at": "2024-11-29T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01532_1",
+      "type": "document",
+      "published_at": "2024-11-28T00:00:00+00:00",
+      "available_at": "2024-11-30T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01533_1",
+      "type": "document",
+      "published_at": "2024-11-30T00:00:00+00:00",
+      "available_at": "2024-12-02T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01534_1",
+      "type": "document",
+      "published_at": "2024-12-01T00:00:00+00:00",
+      "available_at": "2024-12-03T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01535_1",
+      "type": "document",
+      "published_at": "2024-12-02T00:00:00+00:00",
+      "available_at": "2024-12-04T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01536_1",
+      "type": "document",
+      "published_at": "2024-12-03T00:00:00+00:00",
+      "available_at": "2024-12-05T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01537_1",
+      "type": "document",
+      "published_at": "2024-12-05T00:00:00+00:00",
+      "available_at": "2024-12-07T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01530_2",
+      "type": "document",
+      "published_at": "2025-01-23T00:00:00+00:00",
+      "available_at": "2025-01-25T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01531_2",
+      "type": "document",
+      "published_at": "2025-01-24T00:00:00+00:00",
+      "available_at": "2025-01-26T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01532_2",
+      "type": "document",
+      "published_at": "2025-01-25T00:00:00+00:00",
+      "available_at": "2025-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01533_2",
+      "type": "document",
+      "published_at": "2025-01-27T00:00:00+00:00",
+      "available_at": "2025-01-29T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01534_2",
+      "type": "document",
+      "published_at": "2025-01-28T00:00:00+00:00",
+      "available_at": "2025-01-30T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01535_2",
+      "type": "document",
+      "published_at": "2025-01-29T00:00:00+00:00",
+      "available_at": "2025-01-31T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01536_2",
+      "type": "document",
+      "published_at": "2025-01-30T00:00:00+00:00",
+      "available_at": "2025-02-01T00:00:00+00:00"
+    },
+    {
+      "id": "document:D01537_2",
+      "type": "document",
+      "published_at": "2025-02-01T00:00:00+00:00",
+      "available_at": "2025-02-03T00:00:00+00:00"
+    }
+  ],
+  "edges": [
+    {
+      "source": "entity:ENTITY01530",
+      "target": "document:D01530_0",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "document:D01530_0",
+      "target": "event:liquidity",
+      "relation": "mentions"
+    },
+    {
+      "source": "entity:ENTITY01531",
+      "target": "document:D01531_0",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "document:D01531_0",
+      "target": "event:payment_delay",
+      "relation": "mentions"
+    },
+    {
+      "source": "entity:ENTITY01532",
+      "target": "document:D01532_0",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "document:D01532_0",
+      "target": "event:revenue",
+      "relation": "mentions"
+    },
+    {
+      "source": "entity:ENTITY01533",
+      "target": "document:D01533_0",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "document:D01533_0",
+      "target": "event:covenant",
+      "relation": "mentions"
+    },
+    {
+      "source": "entity:ENTITY01534",
+      "target": "document:D01534_0",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01535",
+      "target": "document:D01535_0",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01536",
+      "target": "document:D01536_0",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01537",
+      "target": "document:D01537_0",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "document:D01537_0",
+      "target": "event:revenue",
+      "relation": "mentions"
+    },
+    {
+      "source": "entity:ENTITY01530",
+      "target": "document:D01530_1",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01531",
+      "target": "document:D01531_1",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01532",
+      "target": "document:D01532_1",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "document:D01532_1",
+      "target": "event:covenant",
+      "relation": "mentions"
+    },
+    {
+      "source": "entity:ENTITY01533",
+      "target": "document:D01533_1",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "document:D01533_1",
+      "target": "event:employment",
+      "relation": "mentions"
+    },
+    {
+      "source": "entity:ENTITY01534",
+      "target": "document:D01534_1",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01535",
+      "target": "document:D01535_1",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01536",
+      "target": "document:D01536_1",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01537",
+      "target": "document:D01537_1",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "document:D01537_1",
+      "target": "event:covenant",
+      "relation": "mentions"
+    },
+    {
+      "source": "entity:ENTITY01530",
+      "target": "document:D01530_2",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01531",
+      "target": "document:D01531_2",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01532",
+      "target": "document:D01532_2",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01533",
+      "target": "document:D01533_2",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "document:D01533_2",
+      "target": "event:liquidity",
+      "relation": "mentions"
+    },
+    {
+      "source": "entity:ENTITY01534",
+      "target": "document:D01534_2",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01535",
+      "target": "document:D01535_2",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01536",
+      "target": "document:D01536_2",
+      "relation": "has_evidence"
+    },
+    {
+      "source": "entity:ENTITY01537",
+      "target": "document:D01537_2",
+      "relation": "has_evidence"
+    }
+  ]
+}
